@@ -102,6 +102,39 @@
     font-display: swap;
 }
 
+@media screen and (max-width: 830px) {
+    body {
+        margin: 0;
+    }
+
+    div {
+        width: 100%;
+        text-align: center;
+    }
+
+    video {
+        height: 45%;
+        width: 100vh;
+    }
+
+    .background-image {
+        height: 30vh; 
+        width: 100vh;
+    }
+
+    #intro {
+        width: 100%;
+    }
+
+    .picture-container {
+        width: 100%;
+    }
+
+    .achievement-box {
+        width: 100%;
+    }
+}
+
 * {
     text-align: center;
     align-content: center;
