@@ -102,6 +102,23 @@
     font-display: swap;
 }
 
+@media screen and (max-width: 830px) {
+    div {
+       width: 100%;
+       text-align: center;
+       display: block;
+    }
+
+    .title {
+        font-size: 180px;
+        font-family: oswald-extralight, oswald, sans-serif;
+        letter-spacing: 2px;
+        font-stretch: condensed;
+        transform: scaleX(0.7) scaleY(1.2);
+    }
+
+}
+
 * {
     text-align: center;
     align-content: center;
