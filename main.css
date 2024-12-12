@@ -102,20 +102,13 @@
     font-display: swap;
 }
 
-@media screen and (max-width: 830px) {
-    div {
-       width: 100%;
-       text-align: center;
-       display: block;
-    }
-}
-
 * {
     text-align: center;
     align-content: center;
     justify-content: center;
     box-sizing: border-box;
     color: whitesmoke;
+    cursor: default;
 }
 
 body {
@@ -149,9 +142,17 @@ button:hover {
 }
 
 .title {
-    font-size: clamp(40px, 50vw, 180px);
+    font-size: clamp(40px, 20vw, 180px);
     font-family: oswald-extralight, oswald, sans-serif;
     letter-spacing: 15px;
+    font-stretch: condensed;
+    transform: scaleX(0.7) scaleY(1.2);
+}
+
+.middle-title {
+    font-size: clamp(40px, 15vw, 180px);
+    font-family: oswald-extralight, oswald, sans-serif;
+    letter-spacing: 10px;
     font-stretch: condensed;
     transform: scaleX(0.7) scaleY(1.2);
 }
@@ -168,11 +169,15 @@ button:hover {
 }
 
 .footer-title {
-    font-size: 180px;
+    font-size: clamp(40px, 14vw, 180px);
     font-family: oswald-extralight, oswald, sans-serif;
     letter-spacing: 2px;
     font-stretch: condensed;
     transform: scaleX(0.7) scaleY(1.2);
+    padding-right: 0;
+    margin-right: 0;
+    display: block;
+    align-self: center;
 }
 
 .frame {
@@ -300,7 +305,6 @@ button:hover {
     margin-top: 2%;
     margin-bottom: 5%;
     font-size: 200%;
-    cursor: default;
 }
 
 .contacts i {
