@@ -1,0 +1,227 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KenKen Chew</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  
+  <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="overlay">
+            <video autoplay muted loop>
+                <source src="source/kenken.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay-content">
+                <img src="source/signature.png" alt="Signature" class="center" id="signature">
+                <h1 class="title">KENKEN</h1>
+                <p class="subtitle">MAKEUP ARTIST - SENIOR BEAUTY ADVISOR</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame">
+        <div class="overlay">
+            <img src="source/bg1.png" alt="ABOUT" class="background-image">
+
+            <div class="overlay-content">
+                <h1 class="title">ABOUT</h1>
+                <div class="button-container">
+                    <button type="button" onclick="showAbout()" class="addButton">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="dropdown">
+            <div class="button-container">
+                <button type="button" onclick="hideAbout()" class="minusButton">-</button>
+            </div>
+
+            <div class="left" style="width: 60%;">
+                <p>INTRODUCTION</p>
+                <br>
+                <p>
+                    KenKen, also known as Chew Jun Chuen, is a dedicated beauty professional with over nine years of experience in sales, customer service, and makeup artistry. A graduate of DIVA PRODUCTION Makeup Academy, KenKen holds a professional makeup certification and has gained valuable experience through prestigious sponsorships. His work includes collaborations on Astro video recordings, photoshoots, and backstage roles during Malaysia Fashion Week.
+                </p>
+                <p>
+                    Currently, KenKen serves as a <b>Senior Beauty Advisor and Artistry Team Member at Sephora Malaysia</b>, where his responsibilities extend beyond sales to supporting the training department. His key tasks include conducting onboarding training for new joiners, enhancing their product knowledge, and helping them develop selling skills. He provides mentorship in general product knowledge, makeup techniques, and artistry skills to ensure they excel in their roles.
+                </p>
+                <p>
+                    In collaboration with the marketing team, KenKen contributes to the planning and execution of events, including managing post-event reporting. Additionally, he organizes small-scale weekend activations to introduce customers to new products and drive engagement. His efforts consistently enhance team performance and elevate customer experiences.
+                </p>
+                <p>
+                    With expertise in professional makeup application, skincare advising, content creation, and video editing, KenKen is known for his problem-solving skills, approachable demeanor, and adaptability. He consistently exceeds sales targets and contributes creatively to enhance customer experiences and team performance.
+                </p>
+                <p>
+                    KenKen Chew’s commitment to excellence and innovation has made him a respected figure in the beauty industry, inspiring confidence and elevating standards in every role he takes on.
+                </p>
+            </div>
+
+            <div class="picture-container">
+                <img src="source/profile.jpg" alt="KenKen Chew" class="right">
+            </div>
+
+            <div class="signature-container">
+                <img src="source/signature.png" alt="Signature" id="signature" class="left" style="width: 13%; padding-top: 2%;">
+            </div>
+        </div>
+    </div>
+
+    <div class="frame">
+        <div class="overlay">
+            <img src="source/bg2.jpg" alt="GALLERY OF GLAMOUR" class="background-image">
+
+            <div class="overlay-content" style="overflow: hidden; justify-content: center; align-items: center; width: 100%;">
+                <h1 class="long-title">GALLERY OF GLAMOUR</h1>
+                <div class="button-container">
+                    <button type="button" onclick="showGallery()" style="margin-top: -3%;">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery" class="dropdown" style="padding-left: 6%; padding-right: 6%; padding-bottom: 6%;">
+            <div class="button-container">
+                <button type="button" onclick="hideGallery()" class="minusButton">-</button>
+            </div>
+            
+            <div>
+                <div class="scroll-gallery">
+                    <img src="source/gallery/Fantasy Makeup/IMG_0596.jpg" alt="Fantasy Makeup" class="gallery-img">
+                    <img src="source/gallery/Fantasy Makeup/IMG_0597.jpg" alt="Fantasy Makeup" class="gallery-img">
+                    <img src="source/gallery/Fantasy Makeup/IMG_0598.jpg" alt="Fantasy Makeup" class="gallery-img">
+                    <img src="source/gallery/Fantasy Makeup/IMG_0599.jpg" alt="Fantasy Makeup" class="gallery-img">
+                    <img src="source/gallery/Fantasy Makeup/IMG_0600.jpg" alt="Fantasy Makeup" class="gallery-img">
+                    <img src="source/gallery/Fantasy Makeup/IMG_0601.jpg" alt="Fantasy Makeup" class="gallery-img">
+                    <img src="source/gallery/Fantasy Makeup/IMG_0602.jpg" alt="Fantasy Makeup" class="gallery-img">
+                    <img src="source/gallery/Fantasy Makeup/IMG_0603.jpg" alt="Fantasy Makeup" class="gallery-img" id="last-img">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <div class="scroll-gallery">
+                    <img src="source/gallery/Creative Makeup/IMG_0605.jpg" alt="Creative Makeup" class="gallery-img">
+                    <img src="source/gallery/Creative Makeup/IMG_0606.jpg" alt="Creative Makeup" class="gallery-img">
+                    <img src="source/gallery/Creative Makeup/IMG_0607.jpg" alt="Creative Makeup" class="gallery-img">
+                    <img src="source/gallery/Creative Makeup/IMG_0608.jpg" alt="Creative Makeup" class="gallery-img">
+                    <img src="source/gallery/Creative Makeup/IMG_0609.jpg" alt="Creative Makeup" class="gallery-img">
+                    <img src="source/gallery/Creative Makeup/IMG_0610.jpg" alt="Creative Makeup" class="gallery-img" id="last-img">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <div class="scroll-gallery">
+                    <img src="source/gallery/Makeup1/IMG_0612.jpg" alt="Makeup1" class="gallery-img">
+                    <img src="source/gallery/Makeup1/IMG_0613.jpg" alt="Makeup1" class="gallery-img">
+                    <img src="source/gallery/Makeup1/IMG_0614.jpg" alt="Makeup1" class="gallery-img" id="last-img">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <div class="scroll-gallery">
+                    <img src="source/gallery/Makeup2/IMG_0615.jpg" alt="Makeup2" class="gallery-img">
+                    <img src="source/gallery/Makeup2/IMG_0616.jpg" alt="Makeup2" class="gallery-img">
+                    <img src="source/gallery/Makeup2/IMG_0617.jpg" alt="Makeup2" class="gallery-img" id="last-img">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <div class="scroll-gallery">
+                    <img src="source/gallery/Makeup3/IMG_0618.jpg" alt="Makeup3" class="gallery-img">
+                    <img src="source/gallery/Makeup3/IMG_0620.jpg" alt="Makeup3" class="gallery-img">
+                    <img src="source/gallery/Makeup3/IMG_0619.jpg" alt="Makeup3" class="gallery-img">
+                    <img src="source/gallery/Makeup3/IMG_0646.jpg" alt="Makeup3" class="gallery-img">
+                    <img src="source/gallery/Makeup3/IMG_0647.jpg" alt="Makeup3" class="gallery-img">
+                    <img src="source/gallery/Makeup3/IMG_0648.jpg" alt="Makeup3" class="gallery-img">
+                    <img src="source/gallery/Makeup3/IMG_0621.jpg" alt="Makeup3" class="gallery-img" id="last-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame">
+        <div class="overlay">
+            <img src="source/bg3.jpeg" alt="ACHIEVEMENT" class="background-image">
+
+            <div class="overlay-content">
+                <h1 class="long-title">ACHIEVEMENT</h1>
+                <div class="button-container">
+                    <button type="button" onclick="showAchievement()" class="addButton" style="margin-top: -3.7%;">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="achievement" class="dropdown" style="padding-bottom: 10%;">
+            <div class="button-container">
+                <button type="button" onclick="hideAchievement()" class="minusButton">-</button>
+            </div>
+            
+            <div class="achievement-box">
+                <p>Graduated from DIVA PRODUCTION Makeup Academy (2011 - 2015)</p>
+                <br>
+                <p>Sephora Master Color 2016</p>
+                <br>
+                <p>Top 10 Finalist for Benefit X Sephora Benepro 2016</p>
+                <br>
+                <p>Top 20 Malaysia Finalist for SEA KVD Makeup Competition 2016</p>
+                <br>
+                <p>Sephora Master Essentials 2017</p>
+                <br>
+                <p>Makeup Artist for Miss Universe Malaysia 2017</p>
+            </div>
+
+            <div class="achievement-box">
+                <p>Makeup Artist For Melinda Looi Fashion Show 2017</p>
+                <br>
+                <p>Event Team 2019 - current</p>
+                <br>
+                <p>Coach X Sephora</p>
+                <br>
+                <p>Tag Heuer X Sephora</p>
+                <br>
+                <p>Face of Power Portraits SEPHORA (LGBTQA+)</p>
+                <br>
+                <p>2nd Runner Up Fresh X Sephora Contest 2021</p>
+            </div>
+
+            <div class="achievement-box" style="margin-right: 0;">
+                <p>Makeup Artist for Sephora F88 Grand Opening Champagne</p>
+                <br>
+                <p>Makeup Artist for Sephora 10th years Anniversary</p>
+                <br>
+                <p>SephoraMY Facebook Live</p>
+                <br>
+                <p>SephoraMY social media - Instagram</p>
+                <br>
+                <p>Conducted a session Sephora X Atome Event</p>
+                <br>
+                <p>China Fenty Exchange Program</p>
+            </div>
+        </div>
+    </div>
+
+    <hr style="margin-top: -0.11%;">
+    <h1 class="footer-title">STAY CUTESY</h1>
+    <hr style="margin-top: -5%;">
+
+    <div class="contacts">
+        <a href="https://www.facebook.com/kenkenchew"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/kenkenchew/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@kenkenchew?_t=ZS-8s8zpUGAxrY&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://my.linkedin.com/in/kenkenchew"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://wa.me/60177121218"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://t.me/kenkenchew"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+
+    <p id="copyright">&copy; 2024 KenKen Chew | created by Jacey</p>
+</body>
