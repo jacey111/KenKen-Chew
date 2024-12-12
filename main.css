@@ -121,7 +121,7 @@
         height: 30vh; 
         width: 100vh;
     }
-
+    
     #intro {
         width: 100%;
     }
@@ -132,6 +132,14 @@
 
     .achievement-box {
         width: 100%;
+    }
+
+    .contacts i {
+        font-size: 90%;
+    }
+
+    footer #copyright {
+        font-size: 60%;
     }
 }
 
@@ -366,5 +374,5 @@ button:hover {
 #copyright {
     font-size: 80%;
     letter-spacing: 2px;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
 }
