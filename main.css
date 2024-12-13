@@ -350,7 +350,7 @@ button:hover {
     padding-bottom: 2%;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-device-width: 830px) {
     body {
         margin: 0;
     }
@@ -378,7 +378,6 @@ button:hover {
     .title {
         font-size: clamp(40px, 15vw, 180px);
         letter-spacing: 10px;
-        color: blue;
     }
 
     .subtitle {
