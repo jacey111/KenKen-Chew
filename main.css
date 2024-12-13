@@ -102,53 +102,6 @@
     font-display: swap;
 }
 
-@media screen and (max-width: 830px) {
-    body {
-        margin: 0;
-    }
-
-    div {
-        width: 100%;
-        text-align: center;
-    }
-
-    video {
-        height: 45%;
-        width: 100vh;
-    }
-
-    .background-image {
-        height: 30vh; 
-        width: 100vh;
-    }
-
-    #intro {
-        width: 100%;
-    }
-
-    .picture-container {
-        width: 100%;
-    }
-
-    .achievement-box {
-        width: 100%;
-    }
-
-    .contacts i {
-        font-size: 90%;
-    }
-
-    footer #copyright {
-        font-size: 60%;
-    }
-
-    .title {
-        font-size: 100px;
-        letter-spacing: 10px;
-        transform: scaleX(0.7) scaleY(1.1);
-    }
-}
-
 * {
     text-align: center;
     align-content: center;
@@ -349,6 +302,14 @@ button:hover {
     float: left;
 }
 
+.achievement-box p {
+    margin-bottom: 12%;
+}
+
+.last-p {
+    margin-bottom: 0;
+}
+
 .contacts {
     margin-top: 2%;
     margin-bottom: 5%;
@@ -369,6 +330,12 @@ button:hover {
     position: absolute;
 }
 
+#signature-intro {
+    position: absolute;
+    width: 13%; 
+    padding-top: 2%;
+}
+
 #intro {
     width: 60%;
 }
@@ -381,4 +348,99 @@ button:hover {
     font-size: 80%;
     letter-spacing: 2px;
     padding-bottom: 2%;
+}
+
+@media screen and (max-width: 830px) {
+    body {
+        margin: 0;
+    }
+
+    div {
+        width: 100%;
+        text-align: center;
+    }
+
+    video {
+        height: 55vh;
+        width: 100%;
+    }
+
+    button {
+        font-size: 100%;
+        width: 30px; 
+        height: 30px;
+    }
+
+    .addButton {
+        margin-top: -6.5%;
+    }
+
+    .title {
+        font-size: clamp(40px, 15vw, 180px);
+        letter-spacing: 10px;
+    }
+
+    .subtitle {
+        margin-top: -5%;
+        font-size: 65%;
+    }
+
+    .background-image {
+        height: 40vh; 
+        width: 100%;
+    }
+
+    .center {
+        transform: translate(-50%, -40%); 
+        width: 20%;
+    }    
+
+    #intro {
+        width: 100%;
+        margin-top: -3%;
+    }
+
+    .picture-container {
+        width: 60%;
+        justify-content: center;
+        padding-left: 0;
+        padding-top: 2%;
+    }
+
+    .dropdown {
+        padding-top: 8%;
+        padding-bottom: 20%;
+        justify-content: center;
+    }
+
+    #signature-intro {
+        width: 20%; 
+        padding-top: 4%;
+        padding-bottom: 10%;
+    }
+
+    .scroll-gallery {
+        height: 50%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .achievement-box {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: -3%;
+    }
+
+    .achievement-box p {
+        margin-bottom: 8%;
+    }
+
+    .contacts i {
+        font-size: 90%;
+    }
+
+    footer #copyright {
+        font-size: 60%;
+    }
 }
