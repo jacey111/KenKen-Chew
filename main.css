@@ -134,6 +134,9 @@ button {
     height: 40px;
     transition: background-color 0.3s ease, border 0.3s ease;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 button:hover {
