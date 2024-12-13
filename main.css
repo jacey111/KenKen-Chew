@@ -121,7 +121,7 @@
         height: 30vh; 
         width: 100vh;
     }
-    
+
     #intro {
         width: 100%;
     }
@@ -140,6 +140,11 @@
 
     footer #copyright {
         font-size: 60%;
+    }
+
+    .title {
+        font-size: clamp(40px, 13vw, 180px);
+        letter-spacing: 10px;
     }
 }
 
@@ -191,11 +196,11 @@ button:hover {
 }
 
 .middle-title {
-    font-size: clamp(40px, 10vw, 180px);
+    font-size: clamp(40px, 13vw, 180px);
     font-family: oswald-extralight, oswald, sans-serif;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     font-stretch: condensed;
-    transform: scaleX(0.7) scaleY(1.2);
+    transform: scaleX(0.7) scaleY(1.1);
 }
 
 .long-title {
@@ -274,7 +279,7 @@ button:hover {
 }
 
 .addButton {
-    margin-top: -9%;
+    margin-top: -9.3%;
 }
 
 .minusButton {
