@@ -155,6 +155,11 @@ button:hover {
     letter-spacing: 8px;
     font-stretch: condensed;
     transform: scaleX(0.7) scaleY(1.1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .long-title {
@@ -166,6 +171,8 @@ button:hover {
     white-space: nowrap; 
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-title {
