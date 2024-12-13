@@ -376,9 +376,8 @@ button:hover {
     }
 
     .title {
-        font-size: clamp(40px, 15vw, 180px);
+        font-size: clamp(40px, 13vw, 180px);
         letter-spacing: 10px;
-        color: whitesmoke;
     }
 
     .subtitle {
