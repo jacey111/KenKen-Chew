@@ -395,8 +395,8 @@ button:hover {
     }
 
     .subtitle {
-        margin-top: -3%;
-        font-size: 65%;
+        margin-top: -1%;
+        font-size: 60%;
     }
 
     .background-image {
@@ -406,7 +406,7 @@ button:hover {
 
     .center {
         transform: translate(-50%, -40%); 
-        width: 20%;
+        width: 25%;
     }    
 
     #intro {
@@ -428,7 +428,7 @@ button:hover {
     }
 
     #signature-intro {
-        width: 20%; 
+        width: 25%; 
         padding-top: 4%;
         padding-bottom: 10%;
     }
