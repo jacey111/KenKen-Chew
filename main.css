@@ -125,6 +125,7 @@ p {
 }
 
 button {
+    display: flex;
     background: none;
     border-radius: 100%;
     border-color: whitesmoke;
@@ -272,7 +273,9 @@ button:hover {
 }
 
 .button-container {
+    display: flex;
     width: 100%; 
+    justify-content: center;
 }
 
 .signature-container {
