@@ -525,4 +525,8 @@ button:hover {
     #title-ken {
         padding-top: 3.5%;
     }
+
+    #overlay-vid:before {
+        background: rgba(0, 0, 0, 0.7);
+    }
 }
