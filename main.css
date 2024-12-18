@@ -413,11 +413,11 @@ button:hover {
     }
 
     .background-vid-container {
-        height: 55vh;
+        height: 60vh;
     }
 
     .addButton {
-        margin-top: -5%;
+        margin-top: -6%;
     }
 
     .title {
@@ -435,11 +435,11 @@ button:hover {
     }
 
     .background-container {
-        height: 35vh;
+        height: 33vh;
     }
 
     .background-image {
-        height: 35vh; 
+        height: 33vh; 
         width: 100%;
     }
 
