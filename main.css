@@ -463,7 +463,6 @@ button:hover {
     .center {
         transform: translate(-50%, -40%); 
         width: 25%;
-        margin-bottom: 2%;
     }    
 
     #intro {
@@ -516,18 +515,20 @@ button:hover {
     }
 
     #intro p {
-        font-size: smaller;
+        font-size: small;
     }
 
     .achievement-box p {
-        font-size: smaller;
-    }
-
-    #title-ken {
-        margin-top: 3.5%;
+        font-size: small;
     }
 
     #overlay-vid:before {
         background: rgba(0, 0, 0, 0.7);
+    }
+
+    #main-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
     }
 }
