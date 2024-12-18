@@ -29,7 +29,7 @@ function showAbout() {
 
     setTimeout(() => {
         aboutDiv.classList.add("active");
-        smoothScrollTo(aboutDiv, 1000);
+        smoothScrollTo(aboutDiv, 600);
     }, 10); 
 }
 
@@ -38,11 +38,11 @@ function hideAbout() {
 
     aboutDiv.classList.remove("active");
 
-    smoothScrollTo(document.getElementById("overlay-about"), 1000);
+    smoothScrollTo(document.getElementById("overlay-about"), 600);
 
     setTimeout(() => {
         aboutDiv.style.display = "none";
-    }, 500);
+    }, 300);
 }
 
 function showGallery() {
@@ -52,7 +52,7 @@ function showGallery() {
 
     setTimeout(() => {
         galleryDiv.classList.add("active");
-        smoothScrollTo(galleryDiv, 1000);
+        smoothScrollTo(galleryDiv, 600);
     }, 10); 
 }
 
@@ -61,11 +61,11 @@ function hideGallery() {
 
     galleryDiv.classList.remove("active");
 
-    smoothScrollTo(document.getElementById("overlay-gallery"), 1000);
+    smoothScrollTo(document.getElementById("overlay-gallery"), 600);
 
     setTimeout(() => {
         galleryDiv.style.display = "none";
-    }, 500);
+    }, 300);
 }
 
 function showAchievement() {
@@ -75,7 +75,7 @@ function showAchievement() {
 
     setTimeout(() => {
         achievementDiv.classList.add("active");
-        smoothScrollTo(achievementDiv, 1000);
+        smoothScrollTo(achievementDiv, 600);
     }, 10); 
 }
 
@@ -84,9 +84,9 @@ function hideAchievement() {
 
     achievementDiv.classList.remove("active");
 
-    smoothScrollTo(document.getElementById("overlay-achievement"), 1000);
+    smoothScrollTo(document.getElementById("overlay-achievement"), 600);
 
     setTimeout(() => {
         achievementDiv.style.display = "none";
-    }, 500);
+    }, 300);
 }
