@@ -434,8 +434,12 @@ button:hover {
         font-size: 65%;
     }
 
+    .background-container {
+        height: 35vh;
+    }
+
     .background-image {
-        height: 40vh; 
+        height: 35vh; 
         width: 100%;
     }
 
