@@ -26,67 +26,52 @@ function showAbout() {
     const aboutDiv = document.getElementById("about");
 
     aboutDiv.style.display = "block";
+    aboutDiv.style.opacity = "1";
 
-    setTimeout(() => {
-        aboutDiv.classList.add("active");
-        smoothScrollTo(aboutDiv, 400);
-    }, 10); 
+    smoothScrollTo(aboutDiv, 400);
 }
 
 function hideAbout() {
     const aboutDiv = document.getElementById("about");
 
-    aboutDiv.classList.remove("active");
+    aboutDiv.style.opacity = "0";
+    aboutDiv.style.display = "none";
 
     smoothScrollTo(document.getElementById("overlay-about"), 400);
-
-    setTimeout(() => {
-        aboutDiv.style.display = "none";
-    }, 300);
 }
 
 function showGallery() {
     const galleryDiv = document.getElementById("gallery");
 
     galleryDiv.style.display = "block";
+    galleryDiv.style.opacity = "1";
 
-    setTimeout(() => {
-        galleryDiv.classList.add("active");
-        smoothScrollTo(galleryDiv, 600);
-    }, 10); 
+    smoothScrollTo(galleryDiv, 400);
 }
 
 function hideGallery() {
     const galleryDiv = document.getElementById("gallery");
 
-    galleryDiv.classList.remove("active");
+    galleryDiv.style.opacity = "0";
+    galleryDiv.style.display = "none";
 
-    smoothScrollTo(document.getElementById("overlay-gallery"), 600);
-
-    setTimeout(() => {
-        galleryDiv.style.display = "none";
-    }, 300);
+    smoothScrollTo(document.getElementById("overlay-gallery"), 400);
 }
 
 function showAchievement() {
     const achievementDiv = document.getElementById("achievement");
 
     achievementDiv.style.display = "block";
+    achievementDiv.style.opacity = "1";
 
-    setTimeout(() => {
-        achievementDiv.classList.add("active");
-        smoothScrollTo(achievementDiv, 600);
-    }, 10); 
+    smoothScrollTo(achievementDiv, 400);
 }
 
 function hideAchievement() {
     const achievementDiv = document.getElementById("achievement");
 
-    achievementDiv.classList.remove("active");
+    achievementDiv.style.opacity = "0";
+    achievementDiv.style.display = "none";
 
-    smoothScrollTo(document.getElementById("overlay-achievement"), 600);
-
-    setTimeout(() => {
-        achievementDiv.style.display = "none";
-    }, 300);
+    smoothScrollTo(document.getElementById("overlay-achievement"), 400);
 }

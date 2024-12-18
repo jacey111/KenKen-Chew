@@ -270,12 +270,6 @@ button:hover {
     padding-right: 10%;
     padding-bottom: 15%;
     opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.dropdown.active {
-    display: block; 
-    opacity: 1;
 }
 
 .dropdown p {
