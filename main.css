@@ -102,6 +102,8 @@
     font-display: swap;
 }
 
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -113,10 +115,6 @@ html {
     box-sizing: border-box;
     color: whitesmoke;
     cursor: default;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent; 
 }
 
 body {
