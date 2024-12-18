@@ -29,7 +29,7 @@ function showAbout() {
 
     setTimeout(() => {
         aboutDiv.classList.add("active");
-        smoothScrollTo(aboutDiv, 1500);
+        smoothScrollTo(aboutDiv, 1000);
     }, 10); 
 }
 
@@ -38,7 +38,7 @@ function hideAbout() {
 
     aboutDiv.classList.remove("active");
 
-    smoothScrollTo(document.getElementById("overlay-about"), 1500);
+    smoothScrollTo(document.getElementById("overlay-about"), 1000);
 
     setTimeout(() => {
         aboutDiv.style.display = "none";
@@ -52,7 +52,7 @@ function showGallery() {
 
     setTimeout(() => {
         galleryDiv.classList.add("active");
-        smoothScrollTo(galleryDiv, 1500);
+        smoothScrollTo(galleryDiv, 1000);
     }, 10); 
 }
 
@@ -61,7 +61,7 @@ function hideGallery() {
 
     galleryDiv.classList.remove("active");
 
-    smoothScrollTo(document.getElementById("overlay-gallery"), 1500);
+    smoothScrollTo(document.getElementById("overlay-gallery"), 1000);
 
     setTimeout(() => {
         galleryDiv.style.display = "none";
@@ -75,7 +75,7 @@ function showAchievement() {
 
     setTimeout(() => {
         achievementDiv.classList.add("active");
-        smoothScrollTo(achievementDiv, 1500);
+        smoothScrollTo(achievementDiv, 1000);
     }, 10); 
 }
 
@@ -84,7 +84,7 @@ function hideAchievement() {
 
     achievementDiv.classList.remove("active");
 
-    smoothScrollTo(document.getElementById("overlay-achievement"), 1500);
+    smoothScrollTo(document.getElementById("overlay-achievement"), 1000);
 
     setTimeout(() => {
         achievementDiv.style.display = "none";
