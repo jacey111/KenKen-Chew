@@ -115,6 +115,10 @@ html {
     cursor: default;
 }
 
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
 body {
     margin: 0;
     top: 0;
