@@ -7,7 +7,7 @@ function smoothScrollTo(target, duration) {
     function scrollStep(currentTime) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1); 
-        const ease = easeInOutQuad(progress); 
+        const ease = easeOutQuad(progress); 
         window.scrollTo(0, start + distance * ease);
 
         if (elapsed < duration) {
@@ -15,8 +15,8 @@ function smoothScrollTo(target, duration) {
         }
     }
 
-    function easeInOutQuad(t) {
-        return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    function easeOutQuad(t) {
+        return 1 - (1 - t) * (1 - t); 
     }
 
     requestAnimationFrame(scrollStep);
@@ -29,7 +29,7 @@ function showAbout() {
 
     setTimeout(() => {
         aboutDiv.classList.add("active");
-        smoothScrollTo(aboutDiv, 600);
+        smoothScrollTo(aboutDiv, 400);
     }, 10); 
 }
 
@@ -38,7 +38,7 @@ function hideAbout() {
 
     aboutDiv.classList.remove("active");
 
-    smoothScrollTo(document.getElementById("overlay-about"), 600);
+    smoothScrollTo(document.getElementById("overlay-about"), 400);
 
     setTimeout(() => {
         aboutDiv.style.display = "none";
