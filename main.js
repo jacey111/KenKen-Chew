@@ -75,3 +75,10 @@ function hideAchievement() {
 
     smoothScrollTo(document.getElementById("overlay-achievement"), 100);
 }
+
+const video = document.getElementById('video-bg');
+
+video.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    event.stopPropagation(); 
+});
