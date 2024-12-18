@@ -215,6 +215,7 @@ button:hover {
     height: 100%;
     object-fit: cover; 
     object-position: center;
+    pointer-events: all;
 }
 
 .overlay:before {
