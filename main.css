@@ -153,6 +153,10 @@ button:hover {
     border: 2px solid transparent;
 }
 
+.background-vid-container {
+    height: 93vh;
+}
+
 .title {
     font-size: clamp(40px, 20vw, 180px);
     font-family: oswald-extralight, oswald, sans-serif;
