@@ -447,6 +447,7 @@ button:hover {
     }
 
     .subtitle {
+        margin-top: -2.5%;
         font-size: 75%;
     }
 
@@ -526,8 +527,7 @@ button:hover {
     }
 
     #main-container {
-        display: flex;
         flex-direction: column; 
-        gap: 5%;
+        gap: 50px;
     }
 }
