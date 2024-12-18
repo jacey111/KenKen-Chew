@@ -102,6 +102,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     text-align: center;
     align-content: center;
@@ -265,8 +269,13 @@ button:hover {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 15%;
-    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    top: -100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.dropdown.active {
+    display: block; 
+    opacity: 1;
 }
 
 .dropdown p {

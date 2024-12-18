@@ -1,23 +1,92 @@
+function smoothScrollTo(target, duration) {
+    const start = window.scrollY;
+    const end = target.getBoundingClientRect().top + start;
+    const distance = end - start;
+    const startTime = performance.now();
+
+    function scrollStep(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1); 
+        const ease = easeInOutQuad(progress); 
+        window.scrollTo(0, start + distance * ease);
+
+        if (elapsed < duration) {
+            requestAnimationFrame(scrollStep); 
+        }
+    }
+
+    function easeInOutQuad(t) {
+        return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    }
+
+    requestAnimationFrame(scrollStep);
+}
+
 function showAbout() {
-    document.getElementById("about").style.display = "block";
+    const aboutDiv = document.getElementById("about");
+
+    aboutDiv.style.display = "block";
+
+    setTimeout(() => {
+        aboutDiv.classList.add("active");
+        smoothScrollTo(aboutDiv, 1500);
+    }, 10); 
 }
 
 function hideAbout() {
-    document.getElementById("about").style.display = "none";
+    const aboutDiv = document.getElementById("about");
+
+    aboutDiv.classList.remove("active");
+
+    smoothScrollTo(document.getElementById("overlay-about"), 1500);
+
+    setTimeout(() => {
+        aboutDiv.style.display = "none";
+    }, 500);
 }
 
 function showGallery() {
-    document.getElementById("gallery").style.display = "block";
+    const galleryDiv = document.getElementById("gallery");
+
+    galleryDiv.style.display = "block";
+
+    setTimeout(() => {
+        galleryDiv.classList.add("active");
+        smoothScrollTo(galleryDiv, 1500);
+    }, 10); 
 }
 
 function hideGallery() {
-    document.getElementById("gallery").style.display = "none";
+    const galleryDiv = document.getElementById("gallery");
+
+    galleryDiv.classList.remove("active");
+
+    smoothScrollTo(document.getElementById("overlay-gallery"), 1500);
+
+    setTimeout(() => {
+        galleryDiv.style.display = "none";
+    }, 500);
 }
 
 function showAchievement() {
-    document.getElementById("achievement").style.display = "block";
+    const achievementDiv = document.getElementById("achievement");
+
+    achievementDiv.style.display = "block";
+
+    setTimeout(() => {
+        achievementDiv.classList.add("active");
+        smoothScrollTo(achievementDiv, 1500);
+    }, 10); 
 }
 
 function hideAchievement() {
-    document.getElementById("achievement").style.display = "none";
+    const achievementDiv = document.getElementById("achievement");
+
+    achievementDiv.classList.remove("active");
+
+    smoothScrollTo(document.getElementById("overlay-achievement"), 1500);
+
+    setTimeout(() => {
+        achievementDiv.style.display = "none";
+    }, 500);
 }
