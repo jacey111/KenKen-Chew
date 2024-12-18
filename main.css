@@ -527,6 +527,7 @@ button:hover {
     }
 
     #main-container {
+        padding-top: 3%;
         flex-direction: column; 
         gap: 50px;
     }
