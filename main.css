@@ -404,6 +404,10 @@ button:hover {
         letter-spacing: 10px;
     }
 
+    .middle-title {
+        letter-spacing: 6px;
+    }
+
     .subtitle {
         margin-top: -2.4%;
         font-size: 65%;
