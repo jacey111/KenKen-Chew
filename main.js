@@ -37,7 +37,7 @@ function hideAbout() {
     aboutDiv.style.opacity = "0";
     aboutDiv.style.display = "none";
 
-    smoothScrollTo(document.getElementById("overlay-about"), 300);
+    smoothScrollTo(document.getElementById("overlay-about"), 100);
 }
 
 function showGallery() {
@@ -55,7 +55,7 @@ function hideGallery() {
     galleryDiv.style.opacity = "0";
     galleryDiv.style.display = "none";
 
-    smoothScrollTo(document.getElementById("overlay-gallery"), 300);
+    smoothScrollTo(document.getElementById("overlay-gallery"), 100);
 }
 
 function showAchievement() {
@@ -73,5 +73,5 @@ function hideAchievement() {
     achievementDiv.style.opacity = "0";
     achievementDiv.style.display = "none";
 
-    smoothScrollTo(document.getElementById("overlay-achievement"), 300);
+    smoothScrollTo(document.getElementById("overlay-achievement"), 100);
 }

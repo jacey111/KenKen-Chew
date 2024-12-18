@@ -351,6 +351,10 @@ button:hover {
     color: #7f7f7f;
 }
 
+#overlay-vid:before {
+    background: rgba(0, 0, 0, 0.6);
+}
+
 #signature {
     position: absolute;
 }
