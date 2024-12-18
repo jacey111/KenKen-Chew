@@ -77,8 +77,4 @@ function hideAchievement() {
 }
 
 const video = document.getElementById('video-bg');
-
-video.addEventListener('click', (event) => {
-    event.preventDefault(); 
-    event.stopPropagation(); 
-});
+video.disablePictureInPicture = true;
