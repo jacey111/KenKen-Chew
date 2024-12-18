@@ -102,7 +102,26 @@
     font-display: swap;
 }
 
+@supports (-webkit-touch-callout: none) {
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
 
+    ::-webkit-scrollbar-thumb {
+        background: rgba(100, 100, 100, 0.5); 
+        border-radius: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(100, 100, 100, 0.7); 
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(200, 200, 200, 0.2);
+        border-radius: 5px; 
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -428,8 +447,8 @@ button:hover {
     }
 
     .subtitle {
-        margin-top: -2.4%;
-        font-size: 65%;
+        margin-top: 0%;
+        font-size: 75%;
     }
 
     .background-container {
@@ -501,5 +520,9 @@ button:hover {
 
     .achievement-box p {
         font-size: smaller;
+    }
+
+    #title-ken {
+        padding-top: 2.5%;
     }
 }
