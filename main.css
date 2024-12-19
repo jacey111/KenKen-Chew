@@ -124,13 +124,11 @@
 }
 
 ::selection {
-    background: rgba(85,43,22, 0.7);
-    color: #ffffdf;
+    background: rgba(255, 202, 66, 0.5);
 }
 
 ::-moz-selection { 
-    background: rgba(85,43,22, 0.7);
-    color: #ffffdf;
+    background: rgba(255, 202, 66, 0.5);
 }
 
 html {
@@ -142,7 +140,7 @@ html {
     align-content: center;
     justify-content: center;
     box-sizing: border-box;
-    color: #ffffcb;
+    color: whitesmoke;
     cursor: default;
 }
 
@@ -163,7 +161,7 @@ button {
     display: flex;
     background: none;
     border-radius: 100%;
-    border-color: #ffffcb;
+    border-color: whitesmoke;
     text-decoration: none;
     font-size: 130%;
     width: 40px; 
