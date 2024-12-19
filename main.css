@@ -403,7 +403,8 @@ button:hover {
 #copyright {
     font-size: 80%;
     letter-spacing: 2px;
-    padding-bottom: 2%;
+    margin-top: -2%;
+    padding-bottom: 1%;
 }
 
 @media screen and (max-width: 830px), screen and (max-device-width: 830px) {
