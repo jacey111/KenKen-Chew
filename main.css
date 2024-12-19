@@ -123,6 +123,16 @@
     }
 }
 
+::selection {
+    background: rgba(85,43,22, 0.7);
+    color: #ffffdf;
+}
+
+::-moz-selection { 
+    background: rgba(85,43,22, 0.7);
+    color: #ffffdf;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -132,7 +142,7 @@ html {
     align-content: center;
     justify-content: center;
     box-sizing: border-box;
-    color: whitesmoke;
+    color: #ffffcb;
     cursor: default;
 }
 
@@ -153,7 +163,7 @@ button {
     display: flex;
     background: none;
     border-radius: 100%;
-    border-color: whitesmoke;
+    border-color: #ffffcb;
     text-decoration: none;
     font-size: 130%;
     width: 40px; 
